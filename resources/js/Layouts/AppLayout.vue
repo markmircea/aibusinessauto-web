@@ -11,6 +11,7 @@ import LazyImage from '@/Components/LazyImage.vue';
 import FlashMessage from '@/Components/FlashMessage.vue';
 import DynamicSEO from '@/Components/DynamicSEO.vue';
 import DarkModeToggle from '@/Components/DarkModeToggle.vue';
+import SolutionsDropdown from '@/Components/SolutionsDropdown.vue';
 
 defineProps({
     title: String,
@@ -57,78 +58,23 @@ const currentYear = computed(() => new Date().getFullYear());
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('dashboard')">
-                                <ApplicationMark class="block h-9 w-auto" />
+                                    <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                                        AutomateAI
+                                    </div>
                                 </Link>
                             </div>
 
-                             <!-- Navigation Links -->
-                        <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                            <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                <template #icon>
-                                    <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2L2 22h20L12 2z M12 22L22 2H2L12 22z" />
-                                    </svg>
-                                </template>
-                                <span class="hidden xl:inline">CCAT Cognitive Aptitude</span>
-                                <span class="xl:hidden">CCAT</span>
-                            </NavLink>
-                            <template v-if="!isSubscribed">
-                                <NavLink :href="route('free.practice.test')" :active="route().current('free.practice.test')">
-                                    <template #icon>
-                                        <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                                            <rect x="2" y="2" width="20" height="20" />
-                                        </svg>
-                                    </template>
-                                    <span class="hidden xl:inline">Free Practice Test</span>
-                                    <span class="xl:hidden">Practice Test</span>
+                            <!-- Navigation Links -->
+                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                    Home
                                 </NavLink>
-                            </template>
-                            <NavLink :href="route('verbal.test')" :active="route().current('verbal.test')" class="flex items-center">
-                                <template #icon>
-                                    <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                                        <polygon points="12 2 2 22 22 22" />
-                                    </svg>
-                                </template>
-                                <span>Verbal</span>
-                                <svg v-if="!isSubscribed" class="w-4 h-4 ml-2 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="5" y="11" width="14" height="10" rx="2" ry="2" />
-                                    <path d="M8,11 V7 C8,4.791 9.791,3 12,3 C14.209,3 16,4.791 16,7 V11" />
-                                </svg>
-                            </NavLink>
-                            <NavLink :href="route('math.logic.test')" :active="route().current('math.logic.test')" class="flex items-center">
-                                <template #icon>
-                                    <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                                        <circle cx="12" cy="12" r="10" />
-                                    </svg>
-                                </template>
-                            <span class="hidden xl:inline">Math/Logic</span>
-                                <span class="xl:hidden">Math</span>
-                                <svg v-if="!isSubscribed" class="w-4 h-4 ml-2 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="5" y="11" width="14" height="10" rx="2" ry="2" />
-                                    <path d="M8,11 V7 C8,4.791 9.791,3 12,3 C14.209,3 16,4.791 16,7 V11" />
-                                </svg>
-                            </NavLink>
-                            <NavLink :href="route('spatial.reasoning.test')" :active="route().current('spatial.reasoning.test')" class="flex items-center">
-                                <template #icon>
-                                    <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                                    </svg>
-                                </template>
-                                <span class="hidden xl:inline">Spatial</span>
-                                <span class="xl:hidden">Spatial</span>
-                                <svg v-if="!isSubscribed" class="w-4 h-4 ml-2 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="5" y="11" width="14" height="10" rx="2" ry="2" />
-                                    <path d="M8,11 V7 C8,4.791 9.791,3 12,3 C14.209,3 16,4.791 16,7 V11" />
-                                </svg>
-                            </NavLink>
-                                <NavLink :href="route('full.practice.test')" :active="route().current('full.practice.test')">
-                                    <template #icon>
-                                        <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                                        </svg>
-                                    </template>
-                                    <span class="hidden xl:inline">Full Practice Tests</span>
-                                    <span class="xl:hidden">Full Test</span>
+                                <SolutionsDropdown />
+                                <NavLink href="#benefits" :active="false">
+                                    Benefits
+                                </NavLink>
+                                <NavLink href="#contact" :active="false">
+                                    Contact
                                 </NavLink>
                             </div>
                         </div>
@@ -230,27 +176,35 @@ const currentYear = computed(() => new Date().getFullYear());
                     class="sm:hidden">
                     <div class="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                            CCAT Cognitive Aptitude
+                            Home
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('free.practice.test')"
-                            :active="route().current('free.practice.test')">
-                            Free Practice Test
+                        <div class="border-t border-gray-200 dark:border-gray-600 my-2"></div>
+                        <div class="px-4 py-2 text-xs text-gray-400">Solutions</div>
+                        <ResponsiveNavLink :href="route('solutions.document-processing')" :active="route().current('solutions.document-processing')">
+                            Document Processing
                         </ResponsiveNavLink>
-                            <ResponsiveNavLink :href="route('verbal.test')" :active="route().current('verbal.test')">
-                                Verbal Test
-                            </ResponsiveNavLink>
-                            <ResponsiveNavLink :href="route('math.logic.test')"
-                                :active="route().current('math.logic.test')">
-                                Math and Logic Test
-                            </ResponsiveNavLink>
-                            <ResponsiveNavLink :href="route('spatial.reasoning.test')"
-                                :active="route().current('spatial.reasoning.test')">
-                                Spatial Reasoning Test
-                            </ResponsiveNavLink>
-                            <ResponsiveNavLink :href="route('full.practice.test')"
-                                :active="route().current('full.practice.test')">
-                                Full Practice Tests
-                            </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('solutions.customer-service')" :active="route().current('solutions.customer-service')">
+                            Customer Service
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('solutions.financial-operations')" :active="route().current('solutions.financial-operations')">
+                            Financial Operations
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('solutions.hr-recruitment')" :active="route().current('solutions.hr-recruitment')">
+                            HR & Recruitment
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('solutions.sales-marketing')" :active="route().current('solutions.sales-marketing')">
+                            Sales & Marketing
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('solutions.supply-chain')" :active="route().current('solutions.supply-chain')">
+                            Supply Chain
+                        </ResponsiveNavLink>
+                        <div class="border-t border-gray-200 dark:border-gray-600 my-2"></div>
+                        <ResponsiveNavLink href="#benefits">
+                            Benefits
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink href="#contact">
+                            Contact
+                        </ResponsiveNavLink>
                     </div>
 
                     <!-- Responsive Settings Options -->

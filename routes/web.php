@@ -39,6 +39,33 @@ Route::get('/', function () {
     ]);
 });
 
+// Solution routes
+Route::prefix('solutions')->name('solutions.')->group(function () {
+    Route::get('/document-processing', function () {
+        return Inertia::render('Solutions/DocumentProcessing');
+    })->name('document-processing');
+
+    Route::get('/customer-service', function () {
+        return Inertia::render('Solutions/CustomerService');
+    })->name('customer-service');
+
+    Route::get('/financial-operations', function () {
+        return Inertia::render('Solutions/FinancialOperations');
+    })->name('financial-operations');
+
+    Route::get('/hr-recruitment', function () {
+        return Inertia::render('Solutions/HrRecruitment');
+    })->name('hr-recruitment');
+
+    Route::get('/sales-marketing', function () {
+        return Inertia::render('Solutions/SalesMarketing');
+    })->name('sales-marketing');
+
+    Route::get('/supply-chain', function () {
+        return Inertia::render('Solutions/SupplyChain');
+    })->name('supply-chain');
+});
+
 // Dashboard route for authenticated users
 Route::get('/dashboard', function () {
     $user = Auth::user();

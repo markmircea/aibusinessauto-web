@@ -1,5 +1,6 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
+import AppLayout from '@/Layouts/AppLayout.vue';
 import HeroSection from '@/Components/HeroSection.vue';
 import SolutionsSection from '@/Components/SolutionsSection.vue';
 
@@ -10,61 +11,14 @@ defineProps({
 </script>
 
 <template>
-    <Head>
-        <title>AI Business Automation Solutions</title>
-        <meta name="description" content="Transform your business operations with AI automation. Streamline processes, reduce costs, and boost efficiency with our cutting-edge solutions." />
-    </Head>
+    <AppLayout>
+        <Head>
+            <title>AI Business Automation Solutions</title>
+            <meta name="description" content="Transform your business operations with AI automation. Streamline processes, reduce costs, and boost efficiency with our cutting-edge solutions." />
+        </Head>
 
-    <div class="min-h-screen bg-white dark:bg-gray-900">
-        <!-- Navigation -->
-        <nav class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between h-16">
-                    <div class="flex items-center">
-                        <!-- Logo -->
-                        <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                            AutomateAI
-                        </div>
-                    </div>
-
-                    <!-- Navigation Links -->
-                    <div class="hidden sm:flex sm:items-center sm:space-x-8">
-                        <a href="#solutions" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium">Solutions</a>
-                        <a href="#benefits" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium">Benefits</a>
-                        
-                        <div v-if="canLogin" class="flex items-center space-x-4">
-                            <Link 
-                                v-if="$page.props.auth.user" 
-                                :href="route('dashboard')" 
-                                class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium"
-                            >
-                                Dashboard
-                            </Link>
-
-                            <template v-else>
-                                <Link 
-                                    :href="route('login')" 
-                                    class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 text-sm font-medium"
-                                >
-                                    Log in
-                                </Link>
-
-                                <Link 
-                                    v-if="canRegister" 
-                                    :href="route('register')" 
-                                    class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
-                                >
-                                    Get Started
-                                </Link>
-                            </template>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Main Content -->
-        <main>
+        <div class="min-h-screen bg-white dark:bg-gray-900">
+            <!-- Main Content -->
             <!-- Hero Section -->
             <HeroSection />
 
@@ -117,16 +71,8 @@ defineProps({
                 </div>
             </section>
 
-            <!-- Footer -->
-            <footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
-                <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                    <div class="text-center text-gray-500 dark:text-gray-400">
-                        <p>&copy; 2025 AutomateAI. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
-        </main>
-    </div>
+        </div>
+    </AppLayout>
 </template>
 
 <style>
