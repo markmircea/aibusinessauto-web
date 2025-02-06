@@ -75,6 +75,9 @@ const currentYear = computed(() => new Date().getFullYear());
                                 <NavLink :href="route('solutions.desktop-automation')" :active="route().current('solutions.desktop-automation')">
                                     AI Desktop Automation
                                 </NavLink>
+                                <NavLink :href="route('solutions.ai-integrations')" :active="route().current('solutions.ai-integrations')">
+                                    AI Integrations
+                                </NavLink>
                                 <NavLink href="#benefits" :active="false">
                                     Benefits
                                 </NavLink>

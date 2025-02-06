@@ -10,9 +10,7 @@ const solutions = [
     { name: 'Financial Operations', route: 'solutions.financial-operations' },
     { name: 'HR & Recruitment', route: 'solutions.hr-recruitment' },
     { name: 'Sales & Marketing', route: 'solutions.sales-marketing' },
-    { name: 'Supply Chain', route: 'solutions.supply-chain' },
-    { name: 'Desktop Automation', route: 'solutions.desktop-automation' },
-    { name: 'AI Integrations', route: 'solutions.ai-integrations' }
+    { name: 'Supply Chain', route: 'solutions.supply-chain' }
 ];
 </script>
 
