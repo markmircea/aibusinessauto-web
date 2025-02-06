@@ -17,7 +17,7 @@ onMounted(() => {
   <div class="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
     <!-- Animated background elements -->
     <div class="absolute inset-0">
-      <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div class="absolute inset-0 bg-grid-pattern opacity-25"></div>
       <div class="absolute inset-0 bg-gradient-radial from-blue-500/30 to-transparent"></div>
     </div>
 
