@@ -31,15 +31,23 @@ Route::get('/register', [CustomRegisterController::class, 'create'])
     ->middleware(['guest'])
     ->name('register');
 
-// Dashboard route accessible to all users
+// Landing page route
 Route::get('/', function () {
+    return Inertia::render('Welcome', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+    ]);
+});
+
+// Dashboard route for authenticated users
+Route::get('/dashboard', function () {
     $user = Auth::user();
     $isSubscribed = $user ? $user->isSubscribed() : false;
 
     return Inertia::render('Dashboard', [
         'isSubscribed' => $isSubscribed,
     ]);
-})->name('dashboard');
+})->name('dashboard')->middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']);
 
 // Free Practice Test route accessible to all users
 Route::get('/free-practice-test', function () {
@@ -136,16 +144,7 @@ Route::middleware([
 });
 
 Route::fallback(function () {
-    return app()->call(function () {
-        // Copy the logic from your root route here
-        return Inertia::render('Dashboard', [
-            'isSubscribed' => Auth::check() ? Auth::user()->isSubscribed() : false,
-        ]);
-    });
+    return redirect('/');
 });
 
 // Route::get('/generate-pdfs', [QuestionPDFController::class, 'generatePDFs'])->name('generate.pdf');
-
-
-
-
