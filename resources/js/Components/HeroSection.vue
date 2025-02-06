@@ -14,10 +14,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+  <div class="relative overflow-hidden animated-bg">
     <!-- Animated background elements -->
     <div class="absolute inset-0">
-      <div class="absolute inset-0 bg-grid-pattern opacity-25"></div>
+      <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
       <div class="absolute inset-0 bg-gradient-radial from-blue-500/30 to-transparent"></div>
     </div>
 
@@ -72,10 +72,30 @@ onMounted(() => {
 .bg-grid-pattern {
   background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
   background-size: 30px 30px;
+  animation: pulse 8s ease-in-out infinite;
 }
 
 .bg-gradient-radial {
   background: radial-gradient(circle at center, var(--tw-gradient-from), var(--tw-gradient-to));
+  animation: breathe 15s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 @keyframes float {
@@ -84,6 +104,32 @@ onMounted(() => {
   }
   50% {
     transform: translateY(-20px);
+  }
+}
+</style>
+
+<style>
+.animated-bg {
+  background: linear-gradient(135deg, #1e3a8a, #1e40af, #1e3a8a);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.dark .animated-bg {
+  background: linear-gradient(135deg, #111827, #1f2937, #111827);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 </style>
