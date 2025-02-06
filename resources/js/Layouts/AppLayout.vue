@@ -58,8 +58,10 @@ const currentYear = computed(() => new Date().getFullYear());
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('welcome')">
-                                    <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                                        AutomateAI
+                                    <div class="text-2xl font-bold">
+                                        <span class="text-blue-600 dark:text-blue-400">AI</span>
+                                        <span class="text-gray-900 dark:text-white">Brain</span>
+                                        <span class="text-blue-600 dark:text-blue-400">L.ink</span>
                                     </div>
                                 </Link>
                             </div>
@@ -312,8 +314,8 @@ const currentYear = computed(() => new Date().getFullYear());
       </div>
       <div>
         © {{ currentYear }}
-        <a href="mailto:support@ccattest.com" class="hover:text-gray-700 dark:hover:text-gray-300" target="_blank" rel="noopener noreferrer">
-          support@ccattest.com
+        <a href="mailto:support@aibrainl.ink" class="hover:text-gray-700 dark:hover:text-gray-300" target="_blank" rel="noopener noreferrer">
+          support@aibrainl.ink
         </a>
       </div>
     </div>

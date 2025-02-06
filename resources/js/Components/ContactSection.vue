@@ -46,7 +46,7 @@ const handleSubmit = () => {
                 </p>
             </div>
 
-            <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+            <div class="max-w-3xl mx-auto bg-gray-50 dark:bg-gray-700 rounded-lg shadow-xl overflow-hidden">
                 <div class="p-8">
                     <form @submit.prevent="handleSubmit" class="space-y-6">
                         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -56,7 +56,7 @@ const handleSubmit = () => {
                                     type="text"
                                     id="name"
                                     v-model="form.name"
-                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white sm:text-sm"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:text-white sm:text-sm"
                                     required
                                 >
                                 <div v-if="form.errors.name" class="mt-1 text-sm text-red-600">{{ form.errors.name }}</div>
@@ -68,7 +68,7 @@ const handleSubmit = () => {
                                     type="email"
                                     id="email"
                                     v-model="form.email"
-                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white sm:text-sm"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:text-white sm:text-sm"
                                     required
                                 >
                                 <div v-if="form.errors.email" class="mt-1 text-sm text-red-600">{{ form.errors.email }}</div>
@@ -81,7 +81,7 @@ const handleSubmit = () => {
                                 type="text"
                                 id="company"
                                 v-model="form.company"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white sm:text-sm"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:text-white sm:text-sm"
                                 required
                             >
                             <div v-if="form.errors.company" class="mt-1 text-sm text-red-600">{{ form.errors.company }}</div>
@@ -92,7 +92,7 @@ const handleSubmit = () => {
                             <select
                                 id="solution"
                                 v-model="form.solution"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white sm:text-sm"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:text-white sm:text-sm"
                                 required
                             >
                                 <option value="">Select a solution</option>
@@ -109,7 +109,7 @@ const handleSubmit = () => {
                                 id="message"
                                 v-model="form.message"
                                 rows="4"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white sm:text-sm"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:text-white sm:text-sm"
                                 required
                             ></textarea>
                             <div v-if="form.errors.message" class="mt-1 text-sm text-red-600">{{ form.errors.message }}</div>
@@ -155,7 +155,7 @@ const handleSubmit = () => {
                         </div>
                     </div>
                     <h3 class="text-lg font-medium text-gray-900 dark:text-white">Email</h3>
-                    <p class="mt-2 text-base text-gray-600 dark:text-gray-300">contact@automateai.com</p>
+                    <p class="mt-2 text-base text-gray-600 dark:text-gray-300">contact@aibrainl.ink</p>
                 </div>
 
                 <div class="text-center">

@@ -25,11 +25,11 @@ onMounted(() => {
       <div class="text-center">
         <h1 class="hero-text text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6">
           Transform Your Business
-          <span class="block text-blue-400">With AI Automation</span>
+          <span class="block text-blue-400">With Complete AI Automation</span>
         </h1>
         
         <p class="hero-text mx-auto max-w-2xl text-xl sm:text-2xl text-blue-100 mb-10">
-          Streamline operations, reduce costs, and boost efficiency with our cutting-edge AI business automation solutions.
+          Streamline operations and boost efficiency with our cutting-edge AI solutions. Any business process you can think of, we can automate it - optimizing your workforce, reducing costs, and improving quality and response times.
         </p>
 
         <div class="hero-text flex justify-center gap-4">
@@ -48,15 +48,15 @@ onMounted(() => {
         <div class="hero-text mt-16 grid grid-cols-2 gap-8 md:grid-cols-4">
           <div class="text-center">
             <div class="text-3xl font-bold text-white">80%</div>
-            <div class="text-sm text-blue-200">Processing Time Reduction</div>
-          </div>
-          <div class="text-center">
-            <div class="text-3xl font-bold text-white">70%</div>
-            <div class="text-sm text-blue-200">Automated Query Resolution</div>
+            <div class="text-sm text-blue-200">Cost Reduction</div>
           </div>
           <div class="text-center">
             <div class="text-3xl font-bold text-white">90%</div>
             <div class="text-sm text-blue-200">Financial Operation Speed</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-white">70%</div>
+            <div class="text-sm text-blue-200">Process Automation</div>
           </div>
           <div class="text-center">
             <div class="text-3xl font-bold text-white">50%</div>
