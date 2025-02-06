@@ -1,10 +1,18 @@
+<script setup>
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
+import { ChevronUpIcon } from '@heroicons/vue/24/solid';
+import SolutionLayout from './SolutionLayout.vue';
+
+const solutionData = {
+    title: 'Enterprise AI Integration Hub',
+    description: 'Transform your business processes with our extensive suite of AI integrations. We provide enterprise-grade solutions that seamlessly connect with your existing workflows, enabling intelligent automation and enhanced decision-making capabilities.',
+    focus: 'Comprehensive AI integration solutions across cloud services, data analytics, business tools, development, and security.',
+    keyPoint: 'Seamlessly integrate AI capabilities into your existing systems with enterprise-grade security and scalability.',
+};
+</script>
+
 <template>
-  <SolutionLayout>
-    <template #header>
-      <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        Enterprise AI Integration Hub
-      </h2>
-    </template>
+  <SolutionLayout v-bind="solutionData">
 
     <div class="py-12">
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -14,6 +22,7 @@
           <p class="text-lg mb-8">
             Transform your business processes with our extensive suite of AI integrations. We provide enterprise-grade solutions that seamlessly connect with your existing workflows, enabling intelligent automation and enhanced decision-making capabilities across your entire organization.
           </p>
+
 
           <div class="grid md:grid-cols-2 gap-8 mb-12">
             <!-- Cloud Services -->
@@ -490,19 +499,27 @@
           </div>
 
           <div class="bg-gray-50 p-6 rounded-lg mb-8">
-            <h3 class="text-2xl font-semibold mb-4">Enterprise Benefits</h3>
-            <div class="grid md:grid-cols-3 gap-6">
+            <h3 class="text-2xl font-semibold mb-6">Focus Areas & Benefits</h3>
+            <div class="grid md:grid-cols-5 gap-6">
               <div>
-                <h4 class="font-semibold mb-2">Secure & Compliant</h4>
-                <p>Enterprise-grade security with comprehensive compliance framework support</p>
+                <h4 class="font-semibold mb-2 text-blue-700">Customer Service</h4>
+                <p>24/7 automated support with intelligent response systems</p>
               </div>
               <div>
-                <h4 class="font-semibold mb-2">Seamless Integration</h4>
-                <p>Easy integration with your existing enterprise technology stack</p>
+                <h4 class="font-semibold mb-2 text-blue-700">Document Processing</h4>
+                <p>Automated data extraction and intelligent routing</p>
               </div>
               <div>
-                <h4 class="font-semibold mb-2">Scalable Solutions</h4>
-                <p>Built to grow with your business needs and future requirements</p>
+                <h4 class="font-semibold mb-2 text-blue-700">Sales Automation</h4>
+                <p>AI-driven lead scoring and pipeline optimization</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2 text-blue-700">Data Analytics</h4>
+                <p>Real-time insights and predictive business intelligence</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2 text-blue-700">Content Creation</h4>
+                <p>Automated generation and optimization at scale</p>
               </div>
             </div>
           </div>
@@ -519,8 +536,3 @@
   </SolutionLayout>
 </template>
 
-<script setup>
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
-import { ChevronUpIcon } from '@heroicons/vue/24/solid';
-import SolutionLayout from '@/Pages/Solutions/SolutionLayout.vue';
-</script>
