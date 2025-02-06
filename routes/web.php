@@ -37,7 +37,7 @@ Route::get('/', function () {
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
     ]);
-});
+})->name('welcome');
 
 // Solution routes
 Route::prefix('solutions')->name('solutions.')->group(function () {
@@ -93,6 +93,11 @@ Route::post('/complete-registration', [UpgradeAccountController::class, 'complet
 
 Route::post('/reviews', [ReviewController::class, 'store']);
 Route::get('/api/reviews', [ReviewController::class, 'getReviews']);
+
+use App\Http\Controllers\ContactController;
+
+// Contact form submission
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 // Authenticated routes group
 Route::middleware([

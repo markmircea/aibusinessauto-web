@@ -18,32 +18,31 @@ const dismiss = () => {
     show.value = false;
 };
 
-onMounted(() => {
-    const page = usePage();
-    const flash = page.props.flash;
+import { watch } from 'vue';
 
-    if (flash) {
-        if (flash.success) {
-            message.value = flash.success;
-            type.value = 'success';
-            show.value = true;
-        } else if (flash.error) {
-            message.value = flash.error;
-            type.value = 'error';
-            show.value = true;
-        } else if (flash.message) {
-            message.value = flash.message;
-            type.value = 'info';
-            show.value = true;
-        }
+const page = usePage();
 
-        if (show.value) {
-            setTimeout(() => {
-                show.value = false;
-            }, 5000);
-        }
+watch(() => page.props.flash, (flash) => {
+    if (flash?.success) {
+        message.value = flash.success;
+        type.value = 'success';
+        show.value = true;
+    } else if (flash?.error) {
+        message.value = flash.error;
+        type.value = 'error';
+        show.value = true;
+    } else if (flash?.message) {
+        message.value = flash.message;
+        type.value = 'info';
+        show.value = true;
     }
-});
+
+    if (show.value) {
+        setTimeout(() => {
+            show.value = false;
+        }, 5000);
+    }
+}, { immediate: true, deep: true });
 </script>
 
 <template>

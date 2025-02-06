@@ -1,8 +1,9 @@
 <script setup>
-import { Head, Link } from '@inertiajs/vue3';
+import { Head, Link, usePage } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import HeroSection from '@/Components/HeroSection.vue';
 import SolutionsSection from '@/Components/SolutionsSection.vue';
+import ContactSection from '@/Components/ContactSection.vue';
 
 defineProps({
     canLogin: Boolean,
@@ -70,6 +71,8 @@ defineProps({
                     </div>
                 </div>
             </section>
+
+            <ContactSection />
 
         </div>
     </AppLayout>

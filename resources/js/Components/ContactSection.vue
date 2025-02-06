@@ -19,11 +19,17 @@ const solutions = [
     { value: 'supply-chain', label: 'Supply Chain & Inventory' }
 ];
 
+import { usePage } from '@inertiajs/vue3';
+
+const page = usePage();
+
 const handleSubmit = () => {
-    // Form submission logic will be implemented here
     form.post(route('contact.submit'), {
         preserveScroll: true,
-        onSuccess: () => form.reset()
+        preserveState: false,
+        onSuccess: () => {
+            form.reset();
+        }
     });
 };
 </script>
