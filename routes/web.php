@@ -64,6 +64,10 @@ Route::prefix('solutions')->name('solutions.')->group(function () {
     Route::get('/supply-chain', function () {
         return Inertia::render('Solutions/SupplyChain');
     })->name('supply-chain');
+
+    Route::get('/desktop-automation', function () {
+        return Inertia::render('Solutions/DesktopAutomation');
+    })->name('desktop-automation');
 });
 
 // Dashboard route for authenticated users

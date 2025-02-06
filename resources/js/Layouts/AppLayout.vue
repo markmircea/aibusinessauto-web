@@ -57,7 +57,7 @@ const currentYear = computed(() => new Date().getFullYear());
                         <div class="flex">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
-                                <Link :href="route('dashboard')">
+                                <Link :href="route('welcome')">
                                     <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">
                                         AutomateAI
                                     </div>
@@ -66,10 +66,13 @@ const currentYear = computed(() => new Date().getFullYear());
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                <NavLink :href="route('welcome')" :active="route().current('welcome')">
                                     Home
                                 </NavLink>
                                 <SolutionsDropdown />
+                                <NavLink :href="route('solutions.desktop-automation')" :active="route().current('solutions.desktop-automation')">
+                                    AI Desktop Automation
+                                </NavLink>
                                 <NavLink href="#benefits" :active="false">
                                     Benefits
                                 </NavLink>
@@ -199,6 +202,9 @@ const currentYear = computed(() => new Date().getFullYear());
                             Supply Chain
                         </ResponsiveNavLink>
                         <div class="border-t border-gray-200 dark:border-gray-600 my-2"></div>
+                        <ResponsiveNavLink :href="route('solutions.desktop-automation')" :active="route().current('solutions.desktop-automation')">
+                            AI Desktop Automation
+                        </ResponsiveNavLink>
                         <ResponsiveNavLink href="#benefits">
                             Benefits
                         </ResponsiveNavLink>
