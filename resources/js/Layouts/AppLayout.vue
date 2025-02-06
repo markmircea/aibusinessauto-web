@@ -184,7 +184,7 @@ const currentYear = computed(() => new Date().getFullYear());
                             Home
                         </ResponsiveNavLink>
                         <div class="border-t border-gray-200 dark:border-gray-600 my-2"></div>
-                        <div class="px-4 py-2 text-xs text-gray-400">Solutions</div>
+                        <div class="px-4 py-2 text-xs text-gray-400">Business Solutions</div>
                         <ResponsiveNavLink :href="route('solutions.document-processing')" :active="route().current('solutions.document-processing')">
                             Document Processing
                         </ResponsiveNavLink>

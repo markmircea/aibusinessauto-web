@@ -10,7 +10,9 @@ const solutions = [
     { name: 'Financial Operations', route: 'solutions.financial-operations' },
     { name: 'HR & Recruitment', route: 'solutions.hr-recruitment' },
     { name: 'Sales & Marketing', route: 'solutions.sales-marketing' },
-    { name: 'Supply Chain', route: 'solutions.supply-chain' }
+    { name: 'Supply Chain', route: 'solutions.supply-chain' },
+    { name: 'Desktop Automation', route: 'solutions.desktop-automation' },
+    { name: 'AI Integrations', route: 'solutions.ai-integrations' }
 ];
 </script>
 
@@ -19,7 +21,7 @@ const solutions = [
         <Dropdown align="left" width="48">
         <template #trigger>
             <button class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none transition ease-in-out duration-150">
-                Solutions
+                Business Solutions
                 <svg class="ms-2 -me-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                 </svg>

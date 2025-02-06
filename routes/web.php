@@ -68,6 +68,10 @@ Route::prefix('solutions')->name('solutions.')->group(function () {
     Route::get('/desktop-automation', function () {
         return Inertia::render('Solutions/DesktopAutomation');
     })->name('desktop-automation');
+
+    Route::get('/ai-integrations', function () {
+        return Inertia::render('Solutions/AIIntegrations');
+    })->name('ai-integrations');
 });
 
 // Dashboard route for authenticated users
