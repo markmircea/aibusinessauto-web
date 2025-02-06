@@ -123,6 +123,10 @@
                       <li><strong>Elasticsearch:</strong> Intelligent search and analytics engine with ML capabilities.</li>
                       <li><strong>ClickHouse:</strong> High-performance analytics with AI-driven query optimization.</li>
                       <li><strong>Databricks:</strong> Unified analytics platform with integrated AI workflows.</li>
+                      <li><strong>Tinybird:</strong> Real-time analytics with serverless ClickHouse platform.</li>
+                      <li><strong>BigQuery:</strong> Enterprise data warehouse with ML capabilities.</li>
+                      <li><strong>MotherDuck:</strong> Cloud and local analytics with DuckDB integration.</li>
+                      <li><strong>Axiom:</strong> Query and analyze logs, traces, and event data.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -161,6 +165,10 @@
                       <li><strong>Box Intelligence:</strong> Automated document processing and data extraction.</li>
                       <li><strong>Google Workspace:</strong> AI-powered document collaboration and automation.</li>
                       <li><strong>OneDrive:</strong> Smart file organization and search capabilities.</li>
+                      <li><strong>Markdownify:</strong> Convert various file formats to clean, structured Markdown.</li>
+                      <li><strong>Pandoc:</strong> Seamless document format conversion and transformation.</li>
+                      <li><strong>Paperless-NGX:</strong> Intelligent document management and organization.</li>
+                      <li><strong>RAG Web Browser:</strong> Enhanced document search and content extraction.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -192,6 +200,10 @@
                       <li><strong>Microsoft Teams:</strong> AI-powered meeting transcription, task automation, and collaboration insights.</li>
                       <li><strong>Discord:</strong> Community management automation and smart content moderation.</li>
                       <li><strong>Notion AI:</strong> Smart workspace organization and automated content generation.</li>
+                      <li><strong>WeCom Bot:</strong> Automated team messaging and notifications.</li>
+                      <li><strong>Telegram:</strong> AI-powered communication and bot automation.</li>
+                      <li><strong>Bluesky:</strong> Advanced social networking and content sharing.</li>
+                      <li><strong>X (Twitter):</strong> Social media automation and engagement tools.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -207,6 +219,10 @@
                       <li><strong>Evernote:</strong> Smart note categorization and intelligent search capabilities.</li>
                       <li><strong>Zotero:</strong> Automated research paper organization and citation management.</li>
                       <li><strong>Bear Notes:</strong> Intelligent note-taking with smart tagging and organization.</li>
+                      <li><strong>Notion:</strong> Smart workspace with AI-powered content generation.</li>
+                      <li><strong>Minima:</strong> Local RAG system for knowledge management.</li>
+                      <li><strong>MemoryMesh:</strong> Knowledge graph server for AI models.</li>
+                      <li><strong>MCP Brain:</strong> Cognitive memory system for enhanced AI interactions.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -229,6 +245,13 @@
                       <li><strong>GitHub Copilot:</strong> AI-powered code suggestions and automated documentation.</li>
                       <li><strong>GitLab AI:</strong> Intelligent code review and security scanning.</li>
                       <li><strong>Bitbucket:</strong> Automated code analysis and quality checks.</li>
+                      <li><strong>Git:</strong> Advanced repository operations and code analysis.</li>
+                      <li><strong>Phabricator:</strong> Code review and project management platform.</li>
+                      <li><strong>Continue:</strong> Open-source AI code assistant.</li>
+                      <li><strong>Code Snippet Server:</strong> Manage and store reusable code snippets.</li>
+                      <li><strong>MCP Coding Assistant:</strong> AI-powered code analysis and improvement.</li>
+                      <li><strong>Project Handoffs:</strong> Seamless code project transitions.</li>
+                      <li><strong>Branch Thinking:</strong> Multiple chains of thought for code development.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -244,6 +267,17 @@
                       <li><strong>Terraform:</strong> AI-assisted infrastructure provisioning and management.</li>
                       <li><strong>Ansible:</strong> Automated configuration management with AI optimization.</li>
                       <li><strong>Docker:</strong> Smart container management and deployment strategies.</li>
+                      <li><strong>Cloudflare:</strong> Intelligent edge computing and security services.</li>
+                      <li><strong>Neon:</strong> Serverless Postgres infrastructure management.</li>
+                      <li><strong>Supabase:</strong> Open-source Firebase alternative with AI capabilities.</li>
+                      <li><strong>Workers:</strong> Serverless computing at the edge with Cloudflare.</li>
+                      <li><strong>E2B:</strong> Secure cloud development environments.</li>
+                      <li><strong>Metoro:</strong> Kubernetes environment monitoring and management.</li>
+                      <li><strong>Sandbox:</strong> Isolated Docker environments for code execution.</li>
+                      <li><strong>Browserbase:</strong> Cloud browser automation and testing.</li>
+                      <li><strong>Brev:</strong> Run and deploy ML models on the cloud.</li>
+                      <li><strong>Tinybird:</strong> Real-time analytics infrastructure.</li>
+                      <li><strong>Upstash:</strong> Serverless data platform integration.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -277,6 +311,16 @@
                       <li><strong>Browserbase:</strong> Cloud-based browser automation and testing.</li>
                       <li><strong>Postman:</strong> AI-powered API development and testing.</li>
                       <li><strong>Continue:</strong> Advanced AI code assistant for development workflows.</li>
+                      <li><strong>Zed:</strong> High-performance multiplayer code editor.</li>
+                      <li><strong>OpenAPI:</strong> API development and documentation tools.</li>
+                      <li><strong>Puppeteer:</strong> Browser automation and testing framework.</li>
+                      <li><strong>Playwright:</strong> Cross-browser automation platform.</li>
+                      <li><strong>Language Server:</strong> Code editing and analysis tools.</li>
+                      <li><strong>Cursor:</strong> AI-powered code editor integration.</li>
+                      <li><strong>Babashka:</strong> Scripting automation for development.</li>
+                      <li><strong>Penrose:</strong> Mathematical diagram creation tools.</li>
+                      <li><strong>Fillout.io:</strong> Form management and analytics.</li>
+                      <li><strong>Genkit:</strong> Framework for AI-powered applications.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -293,6 +337,11 @@
                       <li><strong>Exa:</strong> Advanced AI search engine for real-time information.</li>
                       <li><strong>Search1API:</strong> Unified API for search, crawling, and site mapping.</li>
                       <li><strong>Tavily:</strong> AI-powered research and data gathering.</li>
+                      <li><strong>ArXiv:</strong> Search and analyze scientific research papers.</li>
+                      <li><strong>PubMed:</strong> Access to biomedical and life sciences literature.</li>
+                      <li><strong>SearXNG:</strong> Privacy-respecting metasearch engine.</li>
+                      <li><strong>NYTimes:</strong> Article search and content analysis.</li>
+                      <li><strong>Scholarly:</strong> Academic and research paper search.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -319,6 +368,14 @@
                       <li><strong>Perplexity:</strong> Advanced AI research and analysis capabilities.</li>
                       <li><strong>Groq:</strong> High-performance inference for language models.</li>
                       <li><strong>Anthropic:</strong> Safe and ethical AI systems for enterprises.</li>
+                      <li><strong>Deepseek:</strong> Advanced language models for specialized tasks.</li>
+                      <li><strong>Mistral:</strong> High-performance language model integration.</li>
+                      <li><strong>Gemini:</strong> Google's advanced language and multimodal AI.</li>
+                      <li><strong>Dify:</strong> Customizable AI workflows and applications.</li>
+                      <li><strong>Any Chat Completions:</strong> Universal API for multiple LLM providers.</li>
+                      <li><strong>Ollama:</strong> Local language model deployment and integration.</li>
+                      <li><strong>MemGPT:</strong> Enhanced memory management for language models.</li>
+                      <li><strong>LangChain:</strong> Framework for building LLM applications.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -334,6 +391,17 @@
                       <li><strong>Google Vision AI:</strong> Comprehensive image understanding and labeling.</li>
                       <li><strong>AWS Rekognition:</strong> Automated image and video analysis.</li>
                       <li><strong>Clarifai:</strong> Custom computer vision models for specific business needs.</li>
+                      <li><strong>EverArt:</strong> AI image generation using various models.</li>
+                      <li><strong>PiAPI:</strong> Media content generation with Midjourney/Flux.</li>
+                      <li><strong>Video Editor:</strong> AI-powered video editing and processing.</li>
+                      <li><strong>Luma:</strong> Advanced video generation capabilities.</li>
+                      <li><strong>Placid:</strong> Creative image and video generation.</li>
+                      <li><strong>Gyazo:</strong> Image capture and OCR processing.</li>
+                      <li><strong>Screenshot MCP:</strong> Automated screenshot and analysis.</li>
+                      <li><strong>Webcam:</strong> Live image capture integration.</li>
+                      <li><strong>Together AI:</strong> Advanced image generation models.</li>
+                      <li><strong>Moondream:</strong> Advanced image analysis and captioning.</li>
+                      <li><strong>WebPerfect:</strong> Automated image optimization pipeline.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -353,6 +421,13 @@
                       <li><strong>Needle:</strong> Production-ready RAG for document search and retrieval.</li>
                       <li><strong>Minima:</strong> Local RAG system for efficient document processing.</li>
                       <li><strong>FireCrawl:</strong> Advanced web scraping with JavaScript rendering.</li>
+                      <li><strong>Sequential Thinking:</strong> Dynamic problem-solving through thought sequences.</li>
+                      <li><strong>Branch Thinking:</strong> Multiple chains of thought management.</li>
+                      <li><strong>Memory Graph:</strong> Persistent memory system for enhanced context.</li>
+                      <li><strong>MemoryMesh:</strong> Knowledge graph server for AI models.</li>
+                      <li><strong>MCP Brain:</strong> Cognitive memory system for AI interactions.</li>
+                      <li><strong>AI Humanizer:</strong> Natural language refinement for AI content.</li>
+                      <li><strong>Goal Story:</strong> Goal tracking and visualization tools.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -379,6 +454,11 @@
                       <li><strong>VirusTotal:</strong> Advanced security analysis and threat detection.</li>
                       <li><strong>OpenCTI:</strong> Comprehensive threat intelligence platform.</li>
                       <li><strong>Keycloak:</strong> Enterprise identity and access management.</li>
+                      <li><strong>Descope:</strong> Advanced user management and audit capabilities.</li>
+                      <li><strong>Huntress:</strong> Managed threat detection and response.</li>
+                      <li><strong>Axiom:</strong> Log analysis and security event monitoring.</li>
+                      <li><strong>Sentry:</strong> Real-time error tracking and monitoring.</li>
+                      <li><strong>Raygun:</strong> Crash reporting and real user monitoring.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
@@ -396,6 +476,12 @@
                       <li><strong>PCI DSS:</strong> Payment card industry compliance automation.</li>
                       <li><strong>CISA BOD:</strong> Automated security controls for Microsoft 365.</li>
                       <li><strong>FHIR:</strong> Healthcare data access and compliance management.</li>
+                      <li><strong>OpenCTI:</strong> Threat intelligence and compliance reporting.</li>
+                      <li><strong>Keycloak:</strong> Identity and access management compliance.</li>
+                      <li><strong>Descope:</strong> User management and audit compliance.</li>
+                      <li><strong>Axiom:</strong> Log retention and compliance monitoring.</li>
+                      <li><strong>Sentry:</strong> Error tracking and security compliance.</li>
+                      <li><strong>Raygun:</strong> Application monitoring compliance.</li>
                     </ul>
                   </DisclosurePanel>
                 </Disclosure>
